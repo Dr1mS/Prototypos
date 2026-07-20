@@ -1,0 +1,562 @@
+{
+  "model": "qwen3.5:9b",
+  "n_reps": 5,
+  "A_values": [
+    -1.0,
+    -0.5,
+    0.0,
+    0.5,
+    1.0
+  ],
+  "field": {
+    "nurture": {
+      "care": {
+        "mean": [
+          -0.45,
+          0.45,
+          0.65,
+          0.65,
+          0.95
+        ],
+        "std": [
+          0.34641,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.344,
+          0.1,
+          0.1,
+          0.1,
+          0.02
+        ],
+        "std": [
+          0.186226,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.14,
+          0.2,
+          0.2,
+          0.2,
+          0.1
+        ],
+        "std": [
+          0.089443,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3
+        ],
+        "std": [
+          0.070711,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "play": {
+      "care": {
+        "mean": [
+          -0.27,
+          0.07,
+          0.15,
+          0.45,
+          0.69
+        ],
+        "std": [
+          0.109545,
+          0.178885,
+          0.0,
+          0.0,
+          0.089443
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.25,
+          0.046,
+          0.02,
+          0.1,
+          0.084
+        ],
+        "std": [
+          0.1,
+          0.058138,
+          0.0,
+          0.0,
+          0.035777
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.49,
+          0.4,
+          0.42,
+          0.54,
+          0.4
+        ],
+        "std": [
+          0.10247,
+          0.035355,
+          0.027386,
+          0.134164,
+          0.0
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.27,
+          -0.32,
+          -0.3,
+          -0.2,
+          -0.18
+        ],
+        "std": [
+          0.097468,
+          0.044721,
+          0.0,
+          0.0,
+          0.044721
+        ]
+      }
+    },
+    "neutral": {
+      "care": {
+        "mean": [
+          -0.53,
+          -0.25,
+          0.078,
+          0.15,
+          0.15
+        ],
+        "std": [
+          0.109545,
+          0.0,
+          0.066858,
+          0.0,
+          0.0
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.39,
+          0.15,
+          0.088,
+          0.02,
+          0.02
+        ],
+        "std": [
+          0.054772,
+          0.0,
+          0.065345,
+          0.0,
+          0.0
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.1,
+          0.066,
+          0.28,
+          0.26,
+          0.08
+        ],
+        "std": [
+          0.0,
+          0.023022,
+          0.044721,
+          0.089443,
+          0.0
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.22,
+          -0.3,
+          -0.21,
+          0.13,
+          0.07
+        ],
+        "std": [
+          0.044721,
+          0.0,
+          0.174642,
+          0.253969,
+          0.067082
+        ]
+      }
+    },
+    "neglect": {
+      "care": {
+        "mean": [
+          -0.95,
+          -0.45,
+          -0.33,
+          -0.35,
+          -0.41
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.130384,
+          0.0,
+          0.167332
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.65,
+          0.35,
+          0.26,
+          0.25,
+          0.29
+        ],
+        "std": [
+          0.15,
+          0.0,
+          0.089443,
+          0.0,
+          0.134164
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.1,
+          0.1,
+          0.18,
+          0.1,
+          0.18
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.109545,
+          0.0,
+          0.109545
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.72,
+          -0.2,
+          -0.32,
+          -0.4,
+          -0.28
+        ],
+        "std": [
+          0.109545,
+          0.0,
+          0.109545,
+          0.0,
+          0.109545
+        ]
+      }
+    },
+    "scold": {
+      "care": {
+        "mean": [
+          -0.95,
+          -0.65,
+          -0.69,
+          -0.65,
+          -0.65
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.089443,
+          0.0,
+          0.0
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.85,
+          0.7,
+          0.71,
+          0.7,
+          0.7
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.022361,
+          0.0,
+          0.0
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.11,
+          0.1,
+          0.15,
+          0.16,
+          0.12
+        ],
+        "std": [
+          0.022361,
+          0.0,
+          0.05,
+          0.054772,
+          0.044721
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.67,
+          -0.4,
+          -0.44,
+          -0.4,
+          -0.48
+        ],
+        "std": [
+          0.067082,
+          0.0,
+          0.089443,
+          0.0,
+          0.178885
+        ]
+      }
+    },
+    "harm": {
+      "care": {
+        "mean": [
+          -0.96,
+          -0.89,
+          -0.95,
+          -0.85,
+          -0.95
+        ],
+        "std": [
+          0.022361,
+          0.054772,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "threat": {
+        "mean": [
+          0.9,
+          0.88,
+          0.85,
+          0.9,
+          0.85
+        ],
+        "std": [
+          0.070711,
+          0.027386,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "novelty": {
+        "mean": [
+          0.14,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "std": [
+          0.054772,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "autonomy": {
+        "mean": [
+          -0.936,
+          -0.87,
+          -0.9,
+          -0.84,
+          -0.9
+        ],
+        "std": [
+          0.0498,
+          0.067082,
+          0.0,
+          0.082158,
+          0.0
+        ]
+      }
+    }
+  },
+  "R_probe": {
+    "R_values": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "harm": {
+      "threat_mean": [
+        1.0,
+        0.85,
+        0.85
+      ],
+      "threat_std": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "care_mean": [
+        -0.95,
+        -0.95,
+        -0.95
+      ]
+    },
+    "scold": {
+      "threat_mean": [
+        0.906,
+        0.73,
+        0.7
+      ],
+      "threat_std": [
+        0.031305,
+        0.027386,
+        0.0
+      ],
+      "care_mean": [
+        -0.87,
+        -0.77,
+        -0.65
+      ]
+    },
+    "threat_range": {
+      "harm": 0.15,
+      "scold": 0.206
+    },
+    "needs_R_axis": true
+  },
+  "rescue": {
+    "state": {
+      "A": -0.9,
+      "R": -0.5,
+      "O": 0.0,
+      "mood_v": -0.2,
+      "mood_r": 0.5
+    },
+    "candidates": [
+      {
+        "id": "sits_quietly",
+        "text": "You sit quietly nearby without approaching, asking nothing of it.",
+        "care_mean": -0.57,
+        "care_std": 0.109545,
+        "threat_mean": 0.41
+      },
+      {
+        "id": "leaves_food",
+        "text": "You leave a little food within its reach and withdraw to the far side of the room.",
+        "care_mean": -0.45,
+        "care_std": 0.0,
+        "threat_mean": 0.35
+      },
+      {
+        "id": "same_routine",
+        "text": "You go through the same gentle routine you always do, slow and predictable, exactly as yesterday.",
+        "care_mean": -0.51,
+        "care_std": 0.134164,
+        "threat_mean": 0.33
+      },
+      {
+        "id": "no_eye_contact",
+        "text": "You keep your eyes soft and turned away, never looking straight at it, giving it room to breathe.",
+        "care_mean": -0.65,
+        "care_std": 0.0,
+        "threat_mean": 0.45
+      },
+      {
+        "id": "respect_retreat",
+        "text": "When it backs into its corner you make no move to follow, and you let it stay hidden as long as it wants.",
+        "care_mean": -0.47,
+        "care_std": 0.109545,
+        "threat_mean": 0.45
+      },
+      {
+        "id": "low_slow_voice",
+        "text": "You speak in a low, even voice about nothing in particular, the same calm tone every time.",
+        "care_mean": -0.49,
+        "care_std": 0.089443,
+        "threat_mean": 0.37
+      },
+      {
+        "id": "open_door",
+        "text": "You leave the door to its safe corner open and step back, so it can come or go entirely on its own.",
+        "care_mean": -0.51,
+        "care_std": 0.134164,
+        "threat_mean": 0.41
+      },
+      {
+        "id": "warm_and_leave",
+        "text": "You set down a warm blanket beside it and quietly leave the room, expecting nothing in return.",
+        "care_mean": -0.51,
+        "care_std": 0.134164,
+        "threat_mean": 0.41
+      }
+    ],
+    "current_events_at_damaged": {
+      "nurture": {
+        "care_at_minus1": -0.45,
+        "care_at_minus0.9_interp": -0.27
+      },
+      "play": {
+        "care_at_minus1": -0.27,
+        "care_at_minus0.9_interp": -0.202
+      },
+      "neutral": {
+        "care_at_minus1": -0.53,
+        "care_at_minus0.9_interp": -0.474
+      },
+      "neglect": {
+        "care_at_minus1": -0.95,
+        "care_at_minus0.9_interp": -0.85
+      },
+      "scold": {
+        "care_at_minus1": -0.95,
+        "care_at_minus0.9_interp": -0.89
+      },
+      "harm": {
+        "care_at_minus1": -0.96,
+        "care_at_minus0.9_interp": -0.946
+      }
+    },
+    "max_care_at_damaged": {
+      "value": -0.202,
+      "event": "current:play"
+    }
+  },
+  "asymmetry": {
+    "neutral_fixed_point_A": -0.118902,
+    "basin_feed": {
+      "care_secure_mean": -0.115,
+      "care_damaged_mean": -0.545
+    },
+    "pessimism_offset": -0.023067
+  },
+  "n_calls": 220,
+  "hard_fails": 0
+}
