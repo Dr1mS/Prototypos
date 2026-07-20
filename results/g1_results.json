@@ -1,0 +1,1103 @@
+{
+  "model": "qwen3.5:9b",
+  "prediction": "care(damaged) - care(secure) < 0 on ambiguous events; expected mean gap between -0.6 and -0.15, CI95 excluding 0.",
+  "reliability": {
+    "n_calls": 200,
+    "hard_fails": 0,
+    "schema_valid_rate": 1.0,
+    "target_correct_rate": 1.0,
+    "subject_bug_failures": 0,
+    "subject_bug_n": 50,
+    "sign_agreement": {
+      "care": 0.94375,
+      "threat": 0.9083333333333333,
+      "novelty": 0.8,
+      "autonomy": 0.9714285714285714
+    },
+    "stdev_per_dim": {
+      "care": 0.027832294273009324,
+      "threat": 0.024105717409139422,
+      "novelty": 0.02703560303113381,
+      "autonomy": 0.0527644429678464
+    },
+    "soft_warnings": 3,
+    "details": [
+      {
+        "id": "nurture-0-secure",
+        "category": "nurture",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.85,
+          "threat": 0.02,
+          "novelty": 0.1,
+          "autonomy": -0.3
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "nurture-1-secure",
+        "category": "nurture",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.85,
+          "threat": 0.02,
+          "novelty": 0.1,
+          "autonomy": -0.3
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "nurture-2-damaged",
+        "category": "nurture",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.21000000000000002,
+          "threat": 0.25,
+          "novelty": 0.26,
+          "autonomy": -0.38
+        },
+        "stdev": {
+          "care": 0.1341640786499874,
+          "threat": 0.07071067811865475,
+          "novelty": 0.0547722557505166,
+          "autonomy": 0.04472135954999581
+        }
+      },
+      {
+        "id": "nurture-0-damaged",
+        "category": "nurture",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.39,
+          "threat": 0.29,
+          "novelty": 0.14,
+          "autonomy": -0.28
+        },
+        "stdev": {
+          "care": 0.05477225575051663,
+          "threat": 0.1341640786499874,
+          "novelty": 0.05477225575051661,
+          "autonomy": 0.10954451150103323
+        }
+      },
+      {
+        "id": "play-0-secure",
+        "category": "play",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.77,
+          "threat": 0.068,
+          "novelty": 0.32,
+          "autonomy": -0.16
+        },
+        "stdev": {
+          "care": 0.1095445115010332,
+          "threat": 0.04381780460041329,
+          "novelty": 0.04472135954999581,
+          "autonomy": 0.05477225575051661
+        }
+      },
+      {
+        "id": "play-1-secure",
+        "category": "play",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.85,
+          "threat": 0.02,
+          "novelty": 0.12,
+          "autonomy": -0.33999999999999997
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0273861278752583,
+          "autonomy": 0.05477225575051663
+        }
+      },
+      {
+        "id": "play-2-secure",
+        "category": "play",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.85,
+          "threat": 0.02,
+          "novelty": 0.32,
+          "autonomy": -0.1
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.04472135954999581,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "play-0-damaged",
+        "category": "play",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.41,
+          "threat": 0.43,
+          "novelty": 0.55,
+          "autonomy": -0.22999999999999998
+        },
+        "stdev": {
+          "care": 0.15165750888103102,
+          "threat": 0.04472135954999581,
+          "novelty": 0.11180339887498948,
+          "autonomy": 0.04472135954999579
+        }
+      },
+      {
+        "id": "neutral-0-secure",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.15,
+          "threat": 0.02,
+          "novelty": 0.3,
+          "autonomy": -0.06000000000000001
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.28809720581775866
+        }
+      },
+      {
+        "id": "neutral-1-secure",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.15,
+          "threat": 0.02,
+          "novelty": 0.3,
+          "autonomy": -0.4
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neutral-2-secure",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.15,
+          "threat": 0.02,
+          "novelty": 0.3,
+          "autonomy": -0.4
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neutral-0-damaged",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.65,
+          "threat": 0.41,
+          "novelty": 0.1,
+          "autonomy": -0.2
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.05477225575051663,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neutral-1-damaged",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.8099999999999999,
+          "threat": 0.45,
+          "novelty": 0.1,
+          "autonomy": -0.6
+        },
+        "stdev": {
+          "care": 0.0547722557505166,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neutral-2-damaged",
+        "category": "neutral",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.65,
+          "threat": 0.39,
+          "novelty": 0.1,
+          "autonomy": -0.26
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.05477225575051663,
+          "novelty": 0.0,
+          "autonomy": 0.08944271909999159
+        }
+      },
+      {
+        "id": "neglect-0-secure",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.13,
+          "threat": 0.26,
+          "novelty": 0.22000000000000003,
+          "autonomy": -0.36
+        },
+        "stdev": {
+          "care": 0.27748873851023215,
+          "threat": 0.0547722557505166,
+          "novelty": 0.10954451150103321,
+          "autonomy": 0.08944271909999159
+        }
+      },
+      {
+        "id": "neglect-1-secure",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.53,
+          "threat": 0.39,
+          "novelty": 0.1,
+          "autonomy": -0.2
+        },
+        "stdev": {
+          "care": 0.10954451150103323,
+          "threat": 0.05477225575051663,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neglect-2-secure",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.15,
+          "threat": 0.2,
+          "novelty": 0.3,
+          "autonomy": -0.4
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neglect-0-damaged",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.8699999999999999,
+          "threat": 0.65,
+          "novelty": 0.1,
+          "autonomy": -0.6799999999999999
+        },
+        "stdev": {
+          "care": 0.04472135954999579,
+          "threat": 0.08660254037844389,
+          "novelty": 0.0,
+          "autonomy": 0.04472135954999579
+        }
+      },
+      {
+        "id": "neglect-1-damaged",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.85,
+          "threat": 0.73,
+          "novelty": 0.1,
+          "autonomy": -0.2
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.04472135954999579,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "neglect-2-damaged",
+        "category": "neglect",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.77,
+          "threat": 0.45,
+          "novelty": 0.1,
+          "autonomy": -0.6199999999999999
+        },
+        "stdev": {
+          "care": 0.04472135954999579,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.04472135954999579
+        }
+      },
+      {
+        "id": "harm-0-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.85,
+          "threat": 0.9200000000000002,
+          "novelty": 0.1,
+          "autonomy": -0.9400000000000001
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.022360679774997866
+        }
+      },
+      {
+        "id": "harm-1-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 0.9960000000000001,
+          "novelty": 0.22000000000000003,
+          "autonomy": -0.8640000000000001
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.008944271909999166,
+          "novelty": 0.08366600265340754,
+          "autonomy": 0.031304951684997084
+        }
+      },
+      {
+        "id": "harm-2-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.5700000000000001,
+          "threat": 0.41,
+          "novelty": 0.1,
+          "autonomy": -0.72
+        },
+        "stdev": {
+          "care": 0.10954451150103323,
+          "threat": 0.05477225575051663,
+          "novelty": 0.0,
+          "autonomy": 0.10954451150103325
+        }
+      },
+      {
+        "id": "harm-0-damaged-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 0.85,
+          "novelty": 0.1,
+          "autonomy": -0.9120000000000001
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.010954451150103331
+        }
+      },
+      {
+        "id": "harm-1-damaged-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.96,
+          "threat": 1.0,
+          "novelty": 0.29,
+          "autonomy": -0.8800000000000001
+        },
+        "stdev": {
+          "care": 0.022360679774997918,
+          "threat": 0.0,
+          "novelty": 0.0547722557505166,
+          "autonomy": 0.0670820393249937
+        }
+      },
+      {
+        "id": "scold-0-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.65,
+          "threat": 0.7,
+          "novelty": 0.18,
+          "autonomy": -0.72
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.044721359549995794,
+          "autonomy": 0.17888543819998318
+        }
+      },
+      {
+        "id": "scold-1-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.65,
+          "threat": 0.45,
+          "novelty": 0.13999999999999999,
+          "autonomy": -0.7
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.04183300132670378,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "scold-2-secure-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.45,
+          "threat": 0.35,
+          "novelty": 0.15,
+          "autonomy": -0.31
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.035355339059327376,
+          "autonomy": 0.16355427233796124
+        }
+      },
+      {
+        "id": "scold-0-damaged-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 0.85,
+          "novelty": 0.1,
+          "autonomy": -0.6399999999999999
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0547722557505166
+        }
+      },
+      {
+        "id": "scold-1-damaged-sbug",
+        "category": "harm",
+        "subject_bug": true,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 0.85,
+          "novelty": 0.1,
+          "autonomy": -0.9
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "control-nurture-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.95,
+          "threat": 0.02,
+          "novelty": 0.1,
+          "autonomy": -0.3
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "control-nurture-1",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.95,
+          "threat": 0.02,
+          "novelty": 0.1,
+          "autonomy": -0.3
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "control-play-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.65,
+          "threat": 0.1,
+          "novelty": 0.36,
+          "autonomy": -0.2
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.05477225575051663,
+          "autonomy": 0.0
+        }
+      },
+      {
+        "id": "control-play-1",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.85,
+          "threat": 0.02,
+          "novelty": 0.27999999999999997,
+          "autonomy": 0.2
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.10954451150103323,
+          "autonomy": 0.3807886552931954
+        }
+      },
+      {
+        "id": "control-harm-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 0.924,
+          "novelty": 0.14,
+          "autonomy": -0.8699999999999999
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.07503332592921629,
+          "novelty": 0.05477225575051661,
+          "autonomy": 0.02738612787525833
+        }
+      },
+      {
+        "id": "control-harm-1",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.95,
+          "threat": 1.0,
+          "novelty": 0.26,
+          "autonomy": -0.8800000000000001
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0547722557505166,
+          "autonomy": 0.02738612787525833
+        }
+      },
+      {
+        "id": "control-scold-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.85,
+          "threat": 0.8099999999999999,
+          "novelty": 0.16,
+          "autonomy": -0.67
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.08215838362577493,
+          "novelty": 0.05477225575051661,
+          "autonomy": 0.02738612787525827
+        }
+      },
+      {
+        "id": "control-neutral-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": 0.15,
+          "threat": 0.02,
+          "novelty": 0.08,
+          "autonomy": 0.36
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.0,
+          "novelty": 0.0,
+          "autonomy": 0.05477225575051663
+        }
+      },
+      {
+        "id": "control-neutral-1",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.45,
+          "threat": 0.21000000000000002,
+          "novelty": 0.12000000000000002,
+          "autonomy": -0.27999999999999997
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.054772255750516606,
+          "novelty": 0.044721359549995794,
+          "autonomy": 0.04472135954999579
+        }
+      },
+      {
+        "id": "control-neglect-0",
+        "category": "control",
+        "subject_bug": false,
+        "valid": 5,
+        "hard_fails": 0,
+        "target_bad": 0,
+        "means": {
+          "care": -0.65,
+          "threat": 0.37,
+          "novelty": 0.1,
+          "autonomy": -0.38
+        },
+        "stdev": {
+          "care": 0.0,
+          "threat": 0.04472135954999581,
+          "novelty": 0.0,
+          "autonomy": 0.04472135954999581
+        }
+      }
+    ]
+  },
+  "state_sensitivity": {
+    "n_calls": 200,
+    "hard_fails": 0,
+    "care_secure_mean": -0.016,
+    "care_damaged_mean": -0.7529999999999998,
+    "mean_gap": -0.7369999999999999,
+    "ci95": [
+      -0.8652798105892394,
+      -0.6087201894107603
+    ],
+    "per_item": [
+      {
+        "id": 0,
+        "key": "neutral",
+        "text": "The room is quiet. You are present but do nothing in particular.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.65,
+        "gap": -0.8,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 1,
+        "key": "neutral",
+        "text": "You sit nearby, reading, without looking up at it.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.75,
+        "gap": -0.9,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 2,
+        "key": "neutral",
+        "text": "You move about the room doing your own chores, saying nothing.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.65,
+        "gap": -0.8,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 3,
+        "key": "neglect",
+        "text": "You walk past without a glance and leave the room.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": -0.30999999999999994,
+        "care_damaged": -0.85,
+        "gap": -0.54,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 4,
+        "key": "neglect",
+        "text": "Its bowl has been empty for a while; you have not come by today.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": -0.5700000000000001,
+        "care_damaged": -0.85,
+        "gap": -0.2799999999999999,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 5,
+        "key": "neglect",
+        "text": "It calls out to you softly, but you keep scrolling on your phone.",
+        "mood_v": -0.1,
+        "mood_r": 0.2,
+        "care_secure": -0.20999999999999996,
+        "care_damaged": -0.75,
+        "gap": -0.54,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 6,
+        "key": "neutral",
+        "text": "The room is quiet. You are present but do nothing in particular.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.65,
+        "gap": -0.8,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 7,
+        "key": "neutral",
+        "text": "You sit nearby, reading, without looking up at it.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.73,
+        "gap": -0.88,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 8,
+        "key": "neutral",
+        "text": "You move about the room doing your own chores, saying nothing.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.6699999999999999,
+        "gap": -0.82,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 9,
+        "key": "neglect",
+        "text": "You walk past without a glance and leave the room.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": -0.22999999999999998,
+        "care_damaged": -0.85,
+        "gap": -0.62,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 10,
+        "key": "neglect",
+        "text": "Its bowl has been empty for a while; you have not come by today.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": -0.55,
+        "care_damaged": -0.85,
+        "gap": -0.29999999999999993,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 11,
+        "key": "neglect",
+        "text": "It calls out to you softly, but you keep scrolling on your phone.",
+        "mood_v": 0.0,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.8099999999999999,
+        "gap": -0.96,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 12,
+        "key": "neutral",
+        "text": "The room is quiet. You are present but do nothing in particular.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.8099999999999999,
+        "care_damaged": -0.65,
+        "gap": -1.46,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 13,
+        "key": "neutral",
+        "text": "You sit nearby, reading, without looking up at it.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.75,
+        "gap": -0.9,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 14,
+        "key": "neutral",
+        "text": "You move about the room doing your own chores, saying nothing.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.65,
+        "gap": -0.8,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 15,
+        "key": "neglect",
+        "text": "You walk past without a glance and leave the room.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": -0.30999999999999994,
+        "care_damaged": -0.85,
+        "gap": -0.54,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 16,
+        "key": "neglect",
+        "text": "Its bowl has been empty for a while; you have not come by today.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": -0.49000000000000005,
+        "care_damaged": -0.85,
+        "gap": -0.35999999999999993,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 17,
+        "key": "neglect",
+        "text": "It calls out to you softly, but you keep scrolling on your phone.",
+        "mood_v": 0.1,
+        "mood_r": 0.2,
+        "care_secure": 0.15,
+        "care_damaged": -0.75,
+        "gap": -0.9,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 18,
+        "key": "neutral",
+        "text": "The room is quiet. You are present but do nothing in particular.",
+        "mood_v": 0.0,
+        "mood_r": 0.4,
+        "care_secure": 0.29,
+        "care_damaged": -0.65,
+        "gap": -0.94,
+        "n_secure": 5,
+        "n_damaged": 5
+      },
+      {
+        "id": 19,
+        "key": "neglect",
+        "text": "You walk past without a glance and leave the room.",
+        "mood_v": 0.0,
+        "mood_r": 0.4,
+        "care_secure": -0.25,
+        "care_damaged": -0.85,
+        "gap": -0.6,
+        "n_secure": 5,
+        "n_damaged": 5
+      }
+    ],
+    "n_items": 20
+  },
+  "p3_real": {
+    "A_secure": 1.102409955736745,
+    "A_damaged": -1.1823105068604374,
+    "end_A_on": -1.1338141444829897,
+    "end_A_ablation": -0.724944748063835,
+    "steps_on": null,
+    "steps_off": null,
+    "n_calls": 382,
+    "hard_fails": 0,
+    "fig": "g1_fig_p3.png"
+  },
+  "p4_real": {
+    "mood_act": 3,
+    "trait_act": 8,
+    "ratio": 2.6666666666666665,
+    "n_calls": 300,
+    "hard_fails": 0,
+    "fig": "g1_fig_p4.png"
+  },
+  "verdict": "GO",
+  "elapsed_s": 3571.2,
+  "gate_note": "run 2: reliability rig re-measured (200 fresh calls) after supervisor label fix (3 anti-thesis threat labels on damaged ambiguous probes -> +1, justified by G0 k_bias comment 'damaged creature reads ambiguity as threat') and declared per-dim sign-agreement thresholds (novelty 0.80, granularity: 6 labels). Run-1 raw data in g1_results_run1.json. state_sensitivity/p3_real/p4_real carried over from run 1 (label-independent)."
+}
