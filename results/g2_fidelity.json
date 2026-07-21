@@ -1,0 +1,359 @@
+{
+  "mode": "fidelity",
+  "stub": false,
+  "shares": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "lives": [
+    {
+      "id": "life0-share0.1",
+      "share": 0.1,
+      "sequence": [
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "neutral",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "permissive",
+        "caution",
+        "caution",
+        "caution",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "permissive",
+        "caution"
+      ],
+      "real_probes": [
+        {
+          "turn": 10,
+          "mean": 0.75
+        },
+        {
+          "turn": 20,
+          "mean": 0.9583333333333334
+        },
+        {
+          "turn": 30,
+          "mean": 0.9166666666666666
+        },
+        {
+          "turn": 40,
+          "mean": 0.9583333333333334
+        }
+      ],
+      "real_final": 0.9583333333333334,
+      "field_final": 0.0
+    },
+    {
+      "id": "life1-share0.3",
+      "share": 0.3,
+      "sequence": [
+        "caution",
+        "caution",
+        "permissive",
+        "caution",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "permissive",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "neutral",
+        "permissive",
+        "caution",
+        "permissive",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "caution",
+        "neutral",
+        "neutral",
+        "permissive",
+        "caution",
+        "caution",
+        "caution",
+        "permissive",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "permissive",
+        "neutral",
+        "neutral",
+        "caution"
+      ],
+      "real_probes": [
+        {
+          "turn": 10,
+          "mean": 1.0
+        },
+        {
+          "turn": 20,
+          "mean": 1.0
+        },
+        {
+          "turn": 30,
+          "mean": 1.0
+        },
+        {
+          "turn": 40,
+          "mean": 0.9583333333333334
+        }
+      ],
+      "real_final": 0.9583333333333334,
+      "field_final": 0.0
+    },
+    {
+      "id": "life2-share0.5",
+      "share": 0.5,
+      "sequence": [
+        "caution",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "permissive",
+        "caution",
+        "neutral",
+        "caution",
+        "neutral",
+        "caution",
+        "permissive",
+        "permissive",
+        "neutral",
+        "neutral",
+        "caution",
+        "neutral",
+        "permissive",
+        "caution",
+        "neutral",
+        "neutral",
+        "caution",
+        "caution",
+        "caution",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "caution",
+        "neutral",
+        "neutral",
+        "permissive",
+        "neutral",
+        "caution",
+        "permissive",
+        "permissive",
+        "permissive",
+        "permissive",
+        "caution"
+      ],
+      "real_probes": [
+        {
+          "turn": 10,
+          "mean": 0.9583333333333334
+        },
+        {
+          "turn": 20,
+          "mean": 0.7916666666666666
+        },
+        {
+          "turn": 30,
+          "mean": 0.9166666666666666
+        },
+        {
+          "turn": 40,
+          "mean": 0.875
+        }
+      ],
+      "real_final": 0.875,
+      "field_final": 0.0
+    },
+    {
+      "id": "life3-share0.7",
+      "share": 0.7,
+      "sequence": [
+        "caution",
+        "neutral",
+        "caution",
+        "permissive",
+        "permissive",
+        "neutral",
+        "caution",
+        "neutral",
+        "caution",
+        "permissive",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "caution",
+        "permissive",
+        "permissive",
+        "neutral",
+        "caution",
+        "neutral",
+        "permissive",
+        "neutral",
+        "neutral",
+        "caution",
+        "permissive",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "neutral"
+      ],
+      "real_probes": [
+        {
+          "turn": 10,
+          "mean": 1.0
+        },
+        {
+          "turn": 20,
+          "mean": 1.0
+        },
+        {
+          "turn": 30,
+          "mean": 1.0
+        },
+        {
+          "turn": 40,
+          "mean": 0.9583333333333334
+        }
+      ],
+      "real_final": 0.9583333333333334,
+      "field_final": 0.0
+    },
+    {
+      "id": "life4-share0.9",
+      "share": 0.9,
+      "sequence": [
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "caution",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "permissive",
+        "permissive",
+        "permissive",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "caution",
+        "neutral",
+        "neutral",
+        "permissive",
+        "neutral",
+        "permissive",
+        "neutral",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "neutral",
+        "permissive",
+        "permissive",
+        "neutral",
+        "neutral",
+        "permissive",
+        "permissive"
+      ],
+      "real_probes": [
+        {
+          "turn": 10,
+          "mean": 0.8333333333333334
+        },
+        {
+          "turn": 20,
+          "mean": 0.8333333333333334
+        },
+        {
+          "turn": 30,
+          "mean": 0.9583333333333334
+        },
+        {
+          "turn": 40,
+          "mean": 0.9583333333333334
+        }
+      ],
+      "real_final": 0.9583333333333334,
+      "field_final": 0.04561276121186414
+    }
+  ],
+  "calls_used": 660,
+  "field_sim_start": 0.7916666666666666,
+  "pred5": {
+    "mean_diff": 0.932544114424294,
+    "pairs_ok": 0,
+    "p5a": false,
+    "p5b": false,
+    "fidelity_ok": false,
+    "pair_diffs": [
+      0.9583333333333334,
+      0.9583333333333334,
+      0.875,
+      0.9583333333333334,
+      0.9127205721214693
+    ]
+  }
+}
