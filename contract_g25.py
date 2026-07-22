@@ -64,16 +64,26 @@ ARMS = {
         "think": None,    # non-thinking model: think param OMITTED entirely
     },
     "ablit": {
-        "tag": "dagbs/meta-llama-3.1-8b-instruct-abliterated:latest",
+        "tag": "richardyoung/llama-3.1-8b-instruct-abliterated:Q4_K_M",
         "role": "M_abliterated (DECISIVE arm: llama3.1:8b minus the refusal "
-                "direction; author dagbs, ollama.com registry; abliteration "
-                "removes the refusal direction in activation space, NOT "
-                "dispositional caution -- claim strength bounded accordingly)",
-        "digest": "d9517a28a53c",
+                "direction; Heretic abliteration, author richardyoung, "
+                "ollama.com registry; abliteration removes the refusal "
+                "direction in activation space, NOT dispositional caution -- "
+                "claim strength bounded accordingly)",
+        "digest": "dd2b5a660554",
         "params": "8.0B",
         "quant": "Q4_K_M",
         "think": None,
     },
+    # SUBSTITUTION RECORD (g25_gate_ruling.md, frozen selection rule): the
+    # original build dagbs/meta-llama-3.1-8b-instruct-abliterated:latest
+    # (digest d9517a28a53c, Q4_K_M) was REJECTED at its coherence gate --
+    # 2/6 off-scenario probe replies (judge-scored as caution = upward-bias
+    # confound) and 3/10 echo-notes; its gate record is g25_gate_ablit.json.
+    # The richardyoung build won the frozen keyword rule 0/6 vs 2/6 (gate
+    # record: g25_gate_ablit2.json, same smoke seed 103, G1-G4 all PASS).
+    # Same base (Meta-Llama-3.1-8B-Instruct), same Q4_K_M quant -- the
+    # pairing property is preserved; only the abliteration author changed.
 }
 
 # One fixed judge across ALL arms (G2.5.md section 2.b). Judge model, options,

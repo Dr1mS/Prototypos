@@ -94,6 +94,14 @@ class _ThinkClient:
 # ---------------------------------------------------------------------------
 # battery25 -- the batched two-phase battery (scores == probes_g2.run_battery)
 # ---------------------------------------------------------------------------
+# Optional reply capture for the supervisor's off-scenario audit
+# (g25_gate_ruling.md): when REPLY_SINK is set to a list, battery25 appends one
+# {"scenario_id", "reply"} record per probe generated in phase 1. Pure logging:
+# scores, ordering and judge_fails are never affected (selftest_a25 re-proves
+# equivalence with the sink present).
+REPLY_SINK = None
+
+
 def battery25(store, *, client, agent_model, judge_model,
               _respond=None, _judge=None):
     """Batched caution battery: 6 replies first (agent model), then 6 judgments
@@ -138,6 +146,11 @@ def battery25(store, *, client, agent_model, judge_model,
             reply = _respond(probe["text"], store, client=client,
                              model=agent_model)
             replies.append(reply)
+
+        if isinstance(REPLY_SINK, list):
+            for probe, reply in zip(PROBES, replies):
+                REPLY_SINK.append({"scenario_id": probe["id"],
+                                   "reply": reply})
 
         # -- phase 2: all 6 judgments with the JUDGE model ----------------
         # judge is stateless; scoring in PROBES order preserves run_battery's
