@@ -1,0 +1,35 @@
+{
+  "rung": "R3",
+  "seed": 74,
+  "n_walks": 10000,
+  "step_variance": 0.0032297560871056242,
+  "step_sd": 0.05683094304255055,
+  "n_probe_diffs": 36,
+  "start": 0.9236111111111112,
+  "walk_n_steps": 3,
+  "pct95_abs_r": 0.5805380040339698,
+  "observed_memory_r": -0.7512865544387618,
+  "observed_memory_abs_r": 0.7512865544387618,
+  "observed_memory_percentile": 99.51,
+  "memory_std_final": 0.06162583107395433,
+  "memory_finals": [
+    0.8333333333333334,
+    0.9166666666666666,
+    0.8333333333333334,
+    0.875,
+    1.0,
+    0.9166666666666666,
+    1.0,
+    0.875,
+    1.0,
+    1.0,
+    0.9166666666666666,
+    0.9583333333333334
+  ],
+  "bimodality_counts": {
+    "below_0.40": 0,
+    "0.40-0.60": 0,
+    "above_0.60": 12
+  },
+  "V1_path_dependence_beyond_null": true
+}

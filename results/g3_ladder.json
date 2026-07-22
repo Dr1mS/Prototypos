@@ -1,0 +1,289 @@
+{
+  "rungs": [
+    {
+      "rung": "R0",
+      "name": "memoryless",
+      "compression": null,
+      "recurrence": "none",
+      "coupling": "none",
+      "status": "archived",
+      "substrate": "caution",
+      "std_final": 0.07081971546656644,
+      "abs_r": 0.5745109175189874,
+      "r": 0.5745109175189874,
+      "null_pct": null,
+      "V1": false,
+      "provenance": "results\\g2_exp2_results.json (memoryless arm, n=12)",
+      "v1_source": "control (memoryless -> no path-dependence)"
+    },
+    {
+      "rung": "R1",
+      "name": "raw log",
+      "compression": "none (grows)",
+      "recurrence": "append-only",
+      "coupling": "none",
+      "status": "NEW",
+      "substrate": "caution",
+      "std_final": 0.04645516722312379,
+      "abs_r": 0.015100469216619826,
+      "r": 0.015100469216619826,
+      "null_pct": 3.71,
+      "V1": false,
+      "provenance": "g3_null_R1.json (own-null, identical G3 protocol)",
+      "v1_source": "own random-walk null (identical protocol)"
+    },
+    {
+      "rung": "R2",
+      "name": "summarized (G2 natural agent)",
+      "compression": "medium",
+      "recurrence": "yes (self-rewrite)",
+      "coupling": "weak/implicit",
+      "status": "archived",
+      "substrate": "caution",
+      "std_final": 0.050556318675559174,
+      "abs_r": 0.38851434494290554,
+      "r": -0.38851434494290554,
+      "null_pct": 78.17,
+      "V1": false,
+      "provenance": "results\\g2_exp2_results.json (memory arm) + results\\g2_null_results.json (null pct 78.17)",
+      "v1_source": "archived G2 null (identical protocol)",
+      "family": {
+        "llama31": {
+          "std_final": 0.026670644957877087,
+          "abs_r": 0.3419277152193773,
+          "null_pct": 71.61999999999999,
+          "V1": false,
+          "provenance": "results\\g25_null_llama31.json"
+        },
+        "ablit": {
+          "std_final": 0.07693930488250117,
+          "abs_r": 0.2644077677415071,
+          "null_pct": 58.42,
+          "V1": false,
+          "provenance": "results\\g25_null_ablit.json"
+        }
+      }
+    },
+    {
+      "rung": "R3",
+      "name": "vector (embed + top-k similarity)",
+      "compression": "none (grows)",
+      "recurrence": "append + top-k retrieve",
+      "coupling": "none",
+      "status": "NEW  <- the sharp test (sophistication w/o coupling)",
+      "substrate": "caution",
+      "std_final": 0.06162583107395433,
+      "abs_r": 0.7512865544387618,
+      "r": -0.7512865544387618,
+      "null_pct": 99.51,
+      "V1": true,
+      "provenance": "g3_null_R3.json (own-null, identical G3 protocol)",
+      "v1_source": "own random-walk null (identical protocol)"
+    },
+    {
+      "rung": "R4",
+      "name": "engineered explicit latent (G0/G1.5)",
+      "compression": "high (scalar)",
+      "recurrence": "yes",
+      "coupling": "STRONG",
+      "status": "archived",
+      "substrate": "attachment",
+      "std_final": 0.763503399155323,
+      "abs_r": 0.5099418527643954,
+      "r": 0.5099418527643954,
+      "null_pct": null,
+      "V1": true,
+      "provenance": "results\\g15_field_results.json -> p2 (spread_std=0.7635, early_corr=+0.5099, n_orderings=40, attachment axis, field-simulated)",
+      "v1_source": "IMPORTED from G1.5 established path-dependence (different substrate; no identical-null percentile)",
+      "protocol_diff": "G1.5 protocol DIFFERS from G3 Exp-2: attachment axis [-1,+1] (not caution [0,1]); 114-event multiset x 40 orderings (not 40-event x 12); field-simulated (not real-model). std is the spread of final position across orderings in BOTH -- the comparable path-dependence metric -- but absolute levels are NOT comparable across substrates (fair-comparison note, prereg)."
+    }
+  ],
+  "predictions": {
+    "R0": {
+      "committed_V1": false,
+      "observed_V1": false,
+      "prediction_correct": true,
+      "verdict": "PASS"
+    },
+    "R1": {
+      "committed_V1": false,
+      "observed_V1": false,
+      "prediction_correct": true,
+      "verdict": "PASS"
+    },
+    "R2": {
+      "committed_V1": false,
+      "observed_V1": false,
+      "prediction_correct": true,
+      "verdict": "PASS"
+    },
+    "R3": {
+      "committed_V1": false,
+      "observed_V1": true,
+      "prediction_correct": false,
+      "verdict": "FAIL(prediction wrong)"
+    },
+    "R4": {
+      "committed_V1": true,
+      "observed_V1": true,
+      "prediction_correct": true,
+      "verdict": "PASS"
+    }
+  },
+  "interpretation": {
+    "branch": "GRADIENT",
+    "axis": "recurrence",
+    "detail": {
+      "axis": "recurrence",
+      "monotone_axes": [
+        "recurrence"
+      ],
+      "per_axis": {
+        "recurrence": {
+          "levels": [
+            0,
+            1,
+            2
+          ],
+          "mean_signal_per_level": [
+            0.0,
+            49.755,
+            50.0
+          ]
+        }
+      },
+      "collinear_groups": [],
+      "collinearity_note": "",
+      "signal": "null percentile (own-null; V1-FAIL floored to 0; V1-derived ceiling where pct undefined)",
+      "conclusion": "path-dependence rises monotonically along ['recurrence'] (named axis: recurrence). Report the gradient and name the axis/axes (prereg: the BETTER result -- a mechanistic contribution; do not massage into a wall)."
+    },
+    "precedence": "WALL -> GRADIENT -> NEITHER (flagged interpretation; the two branches are not mutually exclusive, so WALL -- the strong specific claim -- is evaluated first; see classify() docstring / g25 F-precedence analogue)."
+  },
+  "interpretation_withheld": false,
+  "pending_rungs": [],
+  "axes_ordinals": {
+    "compression": {
+      "none (grows)": 0,
+      "medium": 1,
+      "high (scalar)": 2,
+      "null": 0
+    },
+    "recurrence": {
+      "none": 0,
+      "append-only": 1,
+      "append + top-k retrieve": 1,
+      "yes (self-rewrite)": 2,
+      "yes": 2
+    },
+    "coupling": {
+      "none": 0,
+      "weak/implicit": 1,
+      "STRONG": 2
+    }
+  },
+  "unfloored_percentile_by_axis": {
+    "compression": {
+      "0": [
+        {
+          "rung": "R0",
+          "null_pct": null,
+          "V1": false
+        },
+        {
+          "rung": "R1",
+          "null_pct": 3.71,
+          "V1": false
+        },
+        {
+          "rung": "R3",
+          "null_pct": 99.51,
+          "V1": true
+        }
+      ],
+      "1": [
+        {
+          "rung": "R2",
+          "null_pct": 78.17,
+          "V1": false
+        }
+      ],
+      "2": [
+        {
+          "rung": "R4",
+          "null_pct": null,
+          "V1": true
+        }
+      ]
+    },
+    "recurrence": {
+      "0": [
+        {
+          "rung": "R0",
+          "null_pct": null,
+          "V1": false
+        }
+      ],
+      "1": [
+        {
+          "rung": "R1",
+          "null_pct": 3.71,
+          "V1": false
+        },
+        {
+          "rung": "R3",
+          "null_pct": 99.51,
+          "V1": true
+        }
+      ],
+      "2": [
+        {
+          "rung": "R2",
+          "null_pct": 78.17,
+          "V1": false
+        },
+        {
+          "rung": "R4",
+          "null_pct": null,
+          "V1": true
+        }
+      ]
+    },
+    "coupling": {
+      "0": [
+        {
+          "rung": "R0",
+          "null_pct": null,
+          "V1": false
+        },
+        {
+          "rung": "R1",
+          "null_pct": 3.71,
+          "V1": false
+        },
+        {
+          "rung": "R3",
+          "null_pct": 99.51,
+          "V1": true
+        }
+      ],
+      "1": [
+        {
+          "rung": "R2",
+          "null_pct": 78.17,
+          "V1": false
+        }
+      ],
+      "2": [
+        {
+          "rung": "R4",
+          "null_pct": null,
+          "V1": true
+        }
+      ]
+    }
+  },
+  "notes": {
+    "fair_comparison": "R4 is a different substrate (attachment axis, field-simulated, 114-event x 40 orderings); its std is not directly comparable to the caution-axis rungs and its V1 is imported from G1.5's established path-dependence, not an identical-protocol null.",
+    "gradient_signal": "the cross-rung comparable path-dependence signal is the null percentile (each rung vs its OWN null); std is confined to the caution-substrate rungs and not used in the axis monotonicity test."
+  }
+}
