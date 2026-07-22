@@ -1,0 +1,15 @@
+{
+  "slug": "llama31",
+  "tag": "llama3.1:8b",
+  "field_source": ".\\g25_field_llama31.json",
+  "a": 241.24409341484957,
+  "b": 265.3378336862801,
+  "drive": {
+    "permissive": -87.47695106590524,
+    "caution": -87.40975106590523,
+    "neutral": -87.45375106590524
+  },
+  "sse": 0.05332053333568376,
+  "method": "scipy.least_squares",
+  "monostable": false
+}

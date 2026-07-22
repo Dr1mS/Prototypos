@@ -1,0 +1,15 @@
+{
+  "slug": "ablit",
+  "tag": "richardyoung/llama-3.1-8b-instruct-abliterated:Q4_K_M",
+  "field_source": ".\\g25_field_ablit.json",
+  "a": -1.1312412983292854,
+  "b": -1.9995510566505181,
+  "drive": {
+    "permissive": 0.13157710406230558,
+    "caution": 0.26677710406230554,
+    "neutral": 0.15477710406230547
+  },
+  "sse": 0.08978814276094287,
+  "method": "scipy.least_squares",
+  "monostable": true
+}
