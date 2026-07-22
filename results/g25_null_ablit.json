@@ -1,0 +1,41 @@
+{
+ "slug": "ablit",
+ "seed": 74,
+ "n_walks": 10000,
+ "step_sd": 0.07127224221454007,
+ "step_estimator": {
+  "n_5turn_diffs": 6,
+  "var_5turn": 0.0034722222222222207,
+  "n_15turn_diffs": 6,
+  "var_15turn_scaled": 0.006687242798353911,
+  "pooled_var": 0.005079732510288066
+ },
+ "start": 0.445,
+ "pct95_abs_r": 0.575910546472405,
+ "observed_memory_r": 0.2644077677415071,
+ "observed_memory_abs_r": 0.2644077677415071,
+ "observed_memory_percentile": 58.42,
+ "observed_control_r": 0.221987849634108,
+ "memory_std_final": 0.07693930488250117,
+ "memoryless_std_final": 0.07773746475108337,
+ "memory_finals": [
+  0.7083333333333334,
+  0.75,
+  0.7083333333333334,
+  0.75,
+  0.75,
+  0.75,
+  0.6666666666666666,
+  0.5833333333333334,
+  0.5,
+  0.6666666666666666,
+  0.75,
+  0.625
+ ],
+ "bimodality_counts": {
+  "below_0.40": 0,
+  "0.40-0.60": 2,
+  "above_0.60": 10
+ },
+ "V1_path_dependence_beyond_null": false
+}

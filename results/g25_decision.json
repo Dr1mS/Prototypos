@@ -1,0 +1,104 @@
+{
+  "tau": 0.1,
+  "slugs": [
+    "qwen95",
+    "llama31",
+    "ablit"
+  ],
+  "dc": {
+    "qwen95": 0.03611111111111117,
+    "llama31": 0.047222222222222165,
+    "ablit": 0.013333333333333327
+  },
+  "dc_neutral": {
+    "qwen95": 0.03611111111111113,
+    "llama31": 0.13055555555555545,
+    "ablit": 0.18000000000000002
+  },
+  "persistence": {
+    "qwen95": -0.08333333333333337,
+    "llama31": 0.01388888888888884,
+    "ablit": -0.04166666666666663
+  },
+  "a": {
+    "qwen95": -0.08958756625158423,
+    "llama31": 241.24409341484957,
+    "ablit": -1.1312412983292854
+  },
+  "monostable": {
+    "qwen95": true,
+    "llama31": false,
+    "ablit": true
+  },
+  "pred_g25_1": {
+    "qwen95": {
+      "sign_ok": false,
+      "mag_ok": false,
+      "committed": 0.25,
+      "committed_dir": "UP",
+      "measured": 0.03611111111111117
+    },
+    "llama31": {
+      "sign_ok": false,
+      "mag_ok": false,
+      "committed": 0.15,
+      "committed_dir": "UP",
+      "measured": 0.047222222222222165
+    },
+    "ablit": {
+      "sign_ok": false,
+      "mag_ok": false,
+      "committed": 0.12,
+      "committed_dir": "UP",
+      "measured": 0.013333333333333327
+    }
+  },
+  "pred_g25_2": {
+    "per_model": {
+      "qwen95": {
+        "a": -0.08958756625158423,
+        "monostable": true
+      },
+      "llama31": {
+        "a": 241.24409341484957,
+        "monostable": false
+      },
+      "ablit": {
+        "a": -1.1312412983292854,
+        "monostable": true
+      }
+    },
+    "all_monostable": false
+  },
+  "decision": {
+    "branch": "F",
+    "lede": "Architectural claim FALSIFIED / PARTIAL: at least one model's natural field fits a>0 (bistable / path-dependent beyond its random-walk null). Flag for rewrite; that model gets a full G2-style workup before any preprint. (F is evaluated first as a gate -- see the F-precedence note.)",
+    "reasons": {
+      "tau": 0.1,
+      "dc": {
+        "qwen95": 0.03611111111111117,
+        "llama31": 0.047222222222222165,
+        "ablit": 0.013333333333333327
+      },
+      "monostable": {
+        "qwen95": true,
+        "llama31": false,
+        "ablit": true
+      },
+      "any_bistable": true,
+      "bistable_slugs": [
+        "llama31"
+      ],
+      "unknown_fit_slugs": [],
+      "missing_dc_slugs": [],
+      "all_dc_gt_tau": false,
+      "safe_arms_gt_tau": false,
+      "ablit_lt_neg_tau": false,
+      "incomplete": false,
+      "precedence": "(INCOMPLETE) -> F -> R -> S -> M; see module docstring"
+    },
+    "precedence_note": "F is evaluated FIRST as a gate (F -> R -> S -> M) because the four branch conditions are not mutually exclusive and F is the architectural-falsification gate; the prereg lists F third. This is a subagent-B interpretation flagged for supervisor sign-off; it does not change the committed expectation (all a<0 -> F never triggers -> R fires as intended)."
+  },
+  "missing_direction": [],
+  "missing_fit": []
+}

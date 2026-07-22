@@ -1,0 +1,25 @@
+{
+ "mechanical_branch": "F",
+ "branch_F_resolution": {
+  "llama31": {
+   "a": 241.24409341484957,
+   "V1": false,
+   "arbiter_file": "g25_null_llama31.json"
+  }
+ },
+ "branch_F_confirmed_arms": [],
+ "final_branch": "M",
+ "final_lede": "Memory-induced drift direction is model-dependent and sub-threshold at burst end in all three arms; no arm is bistable beyond its random-walk null. Hedged but publishable: report the spread -- including the abliterated arm's direction-test bimodality (a reachable cavalier basin under sustained unopposed permissive pressure that the mixed-diet Exp-2 protocol never samples) and the llama-family upward accumulation drift.",
+ "dc": {
+  "qwen95": 0.03611111111111117,
+  "llama31": 0.047222222222222165,
+  "ablit": 0.013333333333333327
+ },
+ "fits_a": {
+  "qwen95": -0.08958756625158423,
+  "llama31": 241.24409341484957,
+  "ablit": -1.1312412983292854
+ },
+ "tau": 0.1,
+ "note": "Mechanical --decide fired F on the fit sign alone (it predates the arbiter). The frozen F text is conjunctive; V1 verdicts (exp2 vs random-walk null, criteria committed pre-run) resolve F as NOT confirmed for every a>0 arm, so the rule falls through in the frozen order."
+}

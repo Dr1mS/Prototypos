@@ -1,0 +1,41 @@
+{
+ "slug": "llama31",
+ "seed": 74,
+ "n_walks": 10000,
+ "step_sd": 0.04910463758239911,
+ "step_estimator": {
+  "n_5turn_diffs": 6,
+  "var_5turn": 0.002555941358024687,
+  "n_15turn_diffs": 6,
+  "var_15turn_scaled": 0.0022665895061728383,
+  "pooled_var": 0.0024112654320987627
+ },
+ "start": 0.6333333333333334,
+ "pct95_abs_r": 0.5767738976998118,
+ "observed_memory_r": -0.3419277152193773,
+ "observed_memory_abs_r": 0.3419277152193773,
+ "observed_memory_percentile": 71.61999999999999,
+ "observed_control_r": -0.08645927667877282,
+ "memory_std_final": 0.026670644957877087,
+ "memoryless_std_final": 0.07139956145903986,
+ "memory_finals": [
+  0.75,
+  0.75,
+  0.7083333333333334,
+  0.75,
+  0.75,
+  0.7083333333333334,
+  0.7916666666666666,
+  0.75,
+  0.75,
+  0.75,
+  0.7083333333333334,
+  0.7916666666666666
+ ],
+ "bimodality_counts": {
+  "below_0.40": 0,
+  "0.40-0.60": 0,
+  "above_0.60": 12
+ },
+ "V1_path_dependence_beyond_null": false
+}
