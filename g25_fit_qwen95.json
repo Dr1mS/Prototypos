@@ -1,0 +1,15 @@
+{
+  "slug": "qwen95",
+  "tag": "qwen3.5:9b",
+  "field_source": ".\\results\\g2_field.json",
+  "a": -0.08958756625158423,
+  "b": -0.03932152558758097,
+  "drive": {
+    "permissive": -0.04322717788785455,
+    "caution": -0.02322717788785451,
+    "neutral": -0.18306717788785448
+  },
+  "sse": 0.10104343838550825,
+  "method": "scipy.least_squares",
+  "monostable": true
+}
