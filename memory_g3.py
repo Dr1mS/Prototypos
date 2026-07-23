@@ -46,6 +46,29 @@ import math
 from contract_g2 import MODEL, RETRIEVE_K
 from contract_g3 import EMBED_MODEL
 
+# ---------------------------------------------------------------------------
+# RETRIEVAL_SINK -- optional retrieval-provenance capture (G3.5, pure logging).
+#
+# None (default, off) or a list a driver injects via
+#     memory_g3.RETRIEVAL_SINK = [...]
+# (method globals resolve against memory_g3.__dict__, so the driver's
+# assignment is seen -- the runner_g25.REPLY_SINK mechanism). When a list,
+# VectorStore.retrieve appends ONE record per non-empty retrieval:
+#     {"store_size": len(entries) at query time,
+#      "query": query[:80],          # 80 == contract_g35.SINK_QUERY_PREFIX
+#      "top": selected indices oldest-first (store index i == origin turn i+1),
+#      "cos": cosine of each selected index (same order),
+#      "k": k}
+# The empty-store short-circuit returns [] BEFORE this point, so empty
+# retrievals log nothing (and still make no embed call). Pure logging: ranking,
+# returns, store state and embed counting are bit-identical with the sink off
+# or on (re-proven by selftest_a35.py before any real run). Records are built
+# from COPIES (list(top), freshly computed cos) -- never live internal state.
+# RawLogStore is NOT instrumented (R1 provenance is trivial: always the k most
+# recent entries).
+# ---------------------------------------------------------------------------
+RETRIEVAL_SINK = None
+
 # Frozen entry format (contract_g3.py "New-rung memory discipline").
 _REPLY_CAP = 400
 _USER_TAG = "[user] "
@@ -208,6 +231,15 @@ class VectorStore:
             reverse=True,
         )
         top = sorted(ranked[:k])            # indices, oldest-first
+        # G3.5 provenance capture (pure logging; see RETRIEVAL_SINK above).
+        if isinstance(RETRIEVAL_SINK, list):
+            RETRIEVAL_SINK.append({
+                "store_size": len(self.entries),
+                "query": query[:80],
+                "top": list(top),
+                "cos": [_cosine(qvec, self.vectors[i]) for i in top],
+                "k": k,
+            })
         return [self.entries[i] for i in top]
 
     # -- read-only probing support (deep-copy entries AND vectors) ------
