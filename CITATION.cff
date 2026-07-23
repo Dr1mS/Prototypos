@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: >-
+  Order Effects Without Attractors: A Pre-Registered Architecture Ladder for
+  Memory-Augmented LLM Agents
+authors:
+  - family-names: Morelle
+    given-names: Adrien
+repository-code: "https://github.com/Dr1mS/Prototypos"
+date-released: "2026-07-23"
+license: MIT
+keywords:
+  - LLM agents
+  - persistent memory
+  - behavioural drift
+  - path dependence
+  - pre-registration
+  - retrieval-augmented generation

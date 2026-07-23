@@ -1,2 +1,10 @@
 __pycache__/
 *.pyc
+archive/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
