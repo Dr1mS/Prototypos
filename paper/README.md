@@ -25,19 +25,26 @@ Dependances LaTeX : distribution standard (TeX Live / MiKTeX).
 La version francaise n'utilise PAS `babel-french` (noms de sections et cesures
 definis a la main) — elle compile donc sur une installation minimale.
 
-## A COMPLETER avant diffusion
+## Statut avant diffusion
 
-1. **Bibliographie** — le bloc `thebibliography` est un placeholder en rouge dans
-   les deux fichiers. Aucune reference n'a ete inventee. Il faut retrouver et
-   verifier les sources primaires pour : persona drift, tool drift, mesure de la
-   derive sous memoire persistee (dependance au modele), securite de la memoire
-   des agents, sensibilite au ton / politesse.
-2. **Nom, affiliation, contact** — placeholders `[Author name]` / `[Nom de
-   l'auteur]` en tete de chaque fichier.
-3. **URL du depot** — placeholder `[repository URL]` / `[URL du depot]` dans la
-   section Reproductibilite. C'est le point le plus important : l'argument du
-   papier repose sur des pre-enregistrements horodates AVANT leurs donnees dans
-   l'historique git de ce depot.
+1. **Bibliographie — COMPLETE ET VERIFIEE** (2026-07-23). Les six entrees ont
+   ete verifiees une a une contre leur page arXiv (titre exact, liste
+   d'auteurs complete, date, et adequation entre l'abstract et ce que le texte
+   leur fait dire). Notes de verification :
+   - arXiv:2402.10962 (Li et al.) a ete **retitre** entre v1 (« Measuring and
+     Controlling Persona Drift... ») et la version courante (« Measuring and
+     Controlling Instruction (In)Stability in Language Model Dialogs ») — le
+     titre courant est cite, et la phrase du related work a ete ajustee.
+   - Le protocole « snapshot-then-probe » attribue a ContextEcho
+     (arXiv:2605.24279) figure verbatim dans son abstract.
+   - Le recadrage « entree nuisible → etat memoire » attribue au survey
+     (arXiv:2604.16548) correspond a son cadrage « input-centric security »
+     vs « memory state ».
+2. **Nom, affiliation, contact** — remplis (Adrien Morelle, chercheur
+   independant).
+3. **URL du depot** — remplie (https://github.com/Dr1mS/Prototypos). L'argument
+   du papier repose sur des pre-enregistrements horodates AVANT leurs donnees
+   dans l'historique git de ce depot.
 
 ## Chiffres cites dans le papier — d'ou ils viennent
 

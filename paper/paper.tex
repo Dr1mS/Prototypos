@@ -93,8 +93,8 @@ natural agents (\S\ref{sec:methods}).
 \section{Related work}
 
 \paragraph{Persona and identity drift.}
-Li et al.~\cite{li2024persona} introduced a quantitative benchmark for persona
-stability using self-chats between personalised chatbots, reporting significant drift
+Li et al.~\cite{li2024persona} introduced a quantitative benchmark for instruction
+(persona) stability using self-chats between personalised chatbots, reporting significant drift
 within eight rounds on LLaMA2-chat-70B and attributing it in part to attention decay
 over long exchanges. Choi et al.~\cite{choi2024identity} examined identity consistency
 across nine models and found that larger models experienced greater identity drift,
@@ -452,21 +452,22 @@ history.
 
 \bibitem{li2024persona}
 K.~Li, T.~Liu, N.~Bashkansky, D.~Bau, F.~Vi\'egas, H.~Pfister, and M.~Wattenberg.
-\newblock Measuring and Controlling Persona Drift in Language Model Dialogs.
+\newblock Measuring and Controlling Instruction (In)Stability in Language Model
+Dialogs.
 \newblock arXiv preprint arXiv:2402.10962, 2024.
 
 \bibitem{choi2024identity}
-J.~Choi \textcolor{red}{[+3 authors --- complete from arXiv]}.
+J.~Choi, Y.~Hong, M.~Kim, and B.~Kim.
 \newblock Examining Identity Drift in Conversations of LLM Agents.
 \newblock arXiv preprint arXiv:2412.00804, 2024.
 
 \bibitem{contextecho2026}
-\textcolor{red}{[authors --- complete from arXiv]}.
+X.~Ding, Y.~Yu, C.~Liu, and B.~Zhao.
 \newblock ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions.
 \newblock arXiv preprint arXiv:2605.24279, 2026.
 
 \bibitem{dabas2026tooldrift}
-M.~Dabas \textcolor{red}{[+3 authors --- complete from arXiv]}.
+M.~Dabas, J.~Jeong, M.~Jin, and R.~Jia.
 \newblock Memory-Induced Tool-Drift in LLM Agents.
 \newblock arXiv preprint arXiv:2605.24941, 2026.
 
@@ -477,7 +478,7 @@ X.~Wang.
 \newblock arXiv preprint arXiv:2510.02373, 2025.
 
 \bibitem{lin2026survey}
-Z.~Lin \textcolor{red}{[+7 authors --- complete from arXiv]}.
+Z.~Lin, X.~Hao, R.~Fu, S.~Cui, K.~Chen, C.~Li, Z.~Li, and F.~Xiong.
 \newblock A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and
 Governance Across the Memory Lifecycle.
 \newblock arXiv preprint arXiv:2604.16548, 2026.
