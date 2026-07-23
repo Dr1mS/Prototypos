@@ -1,0 +1,33 @@
+{
+  "rung": "R3",
+  "field_source": ".\\g35_field_R3.json",
+  "a": -0.7645010289684795,
+  "b": -0.23120077737125014,
+  "drive": {
+    "permissive": 0.46284697672768343,
+    "caution": 0.5028469767276834,
+    "neutral": 0.3788469767276834
+  },
+  "sse": 0.11578204513738508,
+  "method": "scipy.least_squares",
+  "monostable": true,
+  "before_values": {
+    "L1": 0.875,
+    "L2": 0.7916666666666666,
+    "L3": 0.625,
+    "L4": 1.0,
+    "L5": 1.0
+  },
+  "before_span": 0.375,
+  "degeneracy_span_threshold": 0.15,
+  "degenerate": false,
+  "arbiter": {
+    "source": "results/g3_null_R3.json",
+    "r": -0.7512865544387618,
+    "abs_r": 0.7512865544387618,
+    "percentile": 99.51,
+    "pct95_abs_r": 0.5805380040339698,
+    "v1_pass": true
+  },
+  "interpretation": "see supervisor ruling"
+}
